@@ -1,0 +1,211 @@
+:root {
+   --color-primary: #5e50a1;
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: "Open Sans", sans-serif;
+}
+button {
+   cursor: pointer;
+}
+section {
+   padding: 30px 7%;
+}
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-right {
+   display: flex;
+   gap: 30px;
+}
+.top-jobs {
+   background-color: var(--color-primary);
+   color: white;
+}
+.container {
+   background-color: rgba(240, 240, 240, 0.781);
+}
+.search-content {
+   position: relative;
+}
+.search-content > input {
+   width: 100%;
+   height: 60px;
+   background-color: white;
+   border: none;
+   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 0 20px;
+}
+.search-option {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   position: absolute;
+   right: 10px;
+   top: 5px;
+}
+.search-option span {
+   width: 1px;
+   height: 50px;
+   background-color: rgb(207, 206, 206);
+}
+.search-btn {
+   background-color: white;
+   border: none;
+}
+.category-btn {
+   background-color: var(--color-primary);
+   color: white;
+   padding: 18px 40px;
+   border: none;
+   border-radius: 5px;
+}
+.search-option p {
+   color: rgb(196, 194, 194);
+}
+
+.peoples {
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+   margin-top: 50px;
+}
+
+.detail-people {
+   border-radius: 5px;
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   padding: 30px;
+}
+.detail-people > img {
+   max-width: 100px;
+}
+.about-people {
+   min-width: 70%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.about-people ul {
+   list-style-type: none;
+}
+.about-people ul li :nth-child(0) {
+   font-size: 14px;
+   font-weight: 500;
+}
+.about-people ul li:nth-child(3) {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   padding: 2px 0;
+   color: rgba(168, 166, 166, 0.932);
+}
+
+.about-people ul li:nth-child(2) {
+   color: rgba(168, 166, 166, 0.932);
+   padding: 2px 0;
+}
+
+.skill-people button {
+   background-color: rgb(245, 187, 80);
+   color: white;
+   padding: 5px 20px;
+   border: none;
+   border-radius: 2px;
+}
+.see-people {
+   background-color: var(--color-primary);
+   color: white;
+   padding: 20px 30px;
+   border: none;
+   border-radius: 5px;
+}
+
+.pagination {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+   margin: 50px 0;
+}
+
+.pagination .prev-btn {
+   border: 1px solid rgb(224, 224, 224);
+   padding: 20px 20px;
+   background-color: white;
+   border-radius: 5px;
+}
+.pagination .prev-btn p {
+   color: rgb(150, 150, 150);
+}
+
+.pagination .next-btn {
+   border: 1px solid rgb(224, 224, 224);
+   padding: 20px 20px;
+   background-color: white;
+   border-radius: 5px;
+}
+.pagination .next-btn p {
+   rotate: 180deg;
+   color: rgb(150, 150, 150);
+}
+.pagination > button:not(.prev-btn):not(.next-btn) {
+   padding: 20px 30px;
+   background-color: white;
+   border: 1px solid rgb(224, 224, 224);
+   color: rgb(150, 150, 150);
+   border-radius: 5px;
+}
+.pagination > button:nth-child(2) {
+   background-color: var(--color-primary) !important;
+   color: white !important;
+}
+
+footer {
+   background-color: var(--color-primary);
+   height: 300px;
+   padding: 5% 10%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+footer .foot-logo {
+   max-width: 300px;
+}
+footer .foot-logo img {
+   width: 200px;
+   height: 50px;
+}
+footer .foot-logo p {
+   color: white;
+   margin-top: 30px;
+   font-size: 16px;
+   font-weight: 100;
+}
+
+footer .foot-end {
+   color: white;
+   padding: 20px 0;
+   display: flex;
+   justify-content: space-between;
+   border-top: 1px solid white;
+   font-weight: 200;
+}
+footer .foot-end .foot-contact {
+   display: flex;
+   gap: 50px;
+}
+
+footer .foot-end .foot-contact > p {
+   cursor: pointer;
+}
