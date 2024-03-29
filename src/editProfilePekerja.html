@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Portofolio</title>
+      <!-- FONTS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+         rel="stylesheet" />
+      <!-- FONTS -->
+      <link rel="stylesheet" href="../assets/css/editProfilePekerja.css" />
+   </head>
+   <body>
+      <nav>
+         <img src="../assets/images/landing-page/main-logo.png" alt="" />
+         <div class="nav-right">
+            <img src="../assets/images/home-v1/bell (1) 1.svg" alt="" />
+            <img src="../assets/images/home-v1/mail (3) 1.svg" alt="" />
+            <img src="../assets/images/home-v1/Mask Group.png" alt="" />
+         </div>
+      </nav>
+      <div class="container"></div>
+      <section id="portofolio">
+         <div class="biodata">
+            <div class="biodata-header">
+               <img
+                  class="foto-profile"
+                  src="../assets/images/landing-page/testimonial_3.png"
+                  alt="" />
+               <div class="edit">
+                  <img
+                     src="../assets/images/edit-pekerja/edit.svg"
+                     alt=""
+                     class="edit-icon" />
+                  <p>Edit</p>
+               </div>
+               <div class="biodata-detail">
+                  <h3>Louis Tomlinson</h3>
+                  <h4>Web Developer</h4>
+                  <div class="location">
+                     <img
+                        src="../assets/images/home-v1/map-pin (4) 1.svg"
+                        alt="" />
+                     <p>Purwokerto, Jawa Tengah</p>
+                  </div>
+                  <p>Freelancer</p>
+               </div>
+            </div>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-simpan">Simpan</button>
+         </div>
+         <div class="form-edit">
+            <div class="data-diri">
+               <p class="title">Data Diri</p>
+               <form action="" class="form-data-diri">
+                  <div class="form-item">
+                     <label for="name">Nama Lengkap</label>
+                     <input
+                        type="text"
+                        name="name"
+                        placeholder="Masukan nama lengkap" />
+                  </div>
+                  <div class="form-item">
+                     <label for="job">Job desk</label>
+                     <input
+                        type="text"
+                        name="job"
+                        placeholder="Masukan job desk" />
+                  </div>
+                  <div class="form-item">
+                     <label for="domisili">Domisili</label>
+                     <input
+                        type="text"
+                        name="domisili"
+                        placeholder="Masukan domisili" />
+                  </div>
+                  <div class="form-item">
+                     <label for="tempat-kerja">Tempat kerja</label>
+                     <input
+                        type="text"
+                        name="tempat-kerja"
+                        placeholder="Masukan Tempat kerja" />
+                  </div>
+                  <div class="form-item">
+                     <label for="description">Deskripsi singkat</label>
+                     <input
+                        type="text"
+                        name="description"
+                        placeholder="Masukan Deskripsi singkat" />
+                  </div>
+               </form>
+            </div>
+            <div class="skill">
+               <form action="" class="form-edit-skill">
+                  <p class="title">Skill</p>
+                  <div class="form-item">
+                     <input type="text" name="skill-name" placeholder="Java" />
+                     <button>Simpan</button>
+                  </div>
+               </form>
+            </div>
+            <div class="experience">
+               <p class="title">Pengalaman Kerja</p>
+               <form action="" class="form-experience">
+                  <div class="form-item">
+                     <label for="posisi">Posisi</label>
+                     <input type="text" placeholder="web developer" />
+                  </div>
+                  <div class="form-item">
+                     <div>
+                        <label for="company">Nama Perusahaan</label>
+                        <input type="text" placeholder="PT Harus bisa" />
+                     </div>
+                     <div>
+                        <label for="year">Bulan/Tahun</label>
+                        <input type="text" placeholder="Januari 2018" />
+                     </div>
+                  </div>
+                  <div class="form-item">
+                     <label for="description">Deskripsi Singkat</label>
+                     <input
+                        type="text"
+                        name="description"
+                        placeholder="Deskripsikan pekerjaan anda" />
+                  </div>
+               </form>
+            </div>
+            <div class="edit-portofolio">
+               <p class="title">Portofolio</p>
+               <form action="" class="edit-porto">
+                  <div class="form-item">
+                     <label for="name">Nama Aplikasi</label>
+                     <input
+                        type="text"
+                        name="name"
+                        placeholder="Masukan nama aplikasi" />
+                  </div>
+                  <div class="form-item">
+                     <label for="repository">Link Repository</label>
+                     <input
+                        type="text"
+                        name="repository"
+                        placeholder="Masukan link repository" />
+                  </div>
+                  <label class="type-portofolio">Type Portofolio</label>
+                  <div class="form-btn">
+                     <div class="btn-type">
+                        <input type="radio" name="mobile" checked="true" />
+                        <p>Aplikasi Mobile</p>
+                     </div>
+                     <div class="btn-type">
+                        <input type="radio" name="web" />
+                        <p>Aplikasi web</p>
+                     </div>
+                  </div>
+               </form>
+               <div class="upload-img">
+                  <p class="title">Upload Gambar</p>
+                  <div class="form-img">
+                     <div class="title">
+                        <img
+                           src="../assets/images/edit-pekerja/upload-cloud (1).svg"
+                           alt="" />
+                        <p>Drag & Drop untuk Upload Gambar Aplikasi Mobile</p>
+                        <p>Atau cari untuk mengupload file dari directorimu</p>
+                     </div>
+
+                     <div class="requirement">
+                        <div class="requirement-item">
+                           <img
+                              src="../assets/images/edit-pekerja/photo.svg"
+                              alt="" />
+                           <small>High-Res Image PNG,JPG, or GIF</small>
+                        </div>
+                        <div class="requirement-item">
+                           <img
+                              src="../assets/images/edit-pekerja/resize.svg"
+                              alt="" />
+                           <small>Size 1080x1920 or 600x800</small>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="btn-portofolio">
+                     <p>Tambah portofolio</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="foot-logo">
+            <img
+               src="../assets/images/landing-page/foot-logo.png"
+               alt="foot logo" />
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+               cupiditate nostrum sequi ipsa quas sed?
+            </p>
+         </div>
+         <div class="foot-end">
+            <p>2020 Peworld. All right reserved</p>
+            <div class="foot-contact">
+               <p>Telepon</p>
+               <p>Email</p>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

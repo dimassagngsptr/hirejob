@@ -1,0 +1,393 @@
+:root {
+   --color-primary: #5e50a1;
+   --font: #9ea0a5;
+   --btn-skilss: #fbb01799;
+   --outline: #fbb017;
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: "Open Sans", sans-serif;
+   background-color: #e4e7e9;
+}
+button {
+   cursor: pointer;
+}
+label {
+   color: var(--font);
+}
+nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 2% 10%;
+   align-items: center;
+   background-color: white;
+}
+.nav-right {
+   display: flex;
+   gap: 30px;
+}
+.container {
+   background-color: var(--color-primary);
+   height: 300px;
+}
+#portofolio {
+   position: relative;
+   height: 2200px;
+}
+.btn-edit {
+   background-color: var(--color-primary);
+   padding: 15px;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   position: absolute;
+   top: 105%;
+   left: 1%;
+   width: 350px;
+}
+.btn-simpan {
+   padding: 15px;
+   background-color: white;
+   border: 1px solid var(--color-primary);
+   border-radius: 5px;
+   color: var(--color-primary);
+   position: absolute;
+   top: 120%;
+   left: 1%;
+   width: 350px;
+}
+.biodata {
+   position: absolute;
+   background-color: white;
+   width: 300px;
+   top: -200px;
+   left: 100px;
+   border-radius: 10px;
+   padding: 20px 30px;
+}
+.portofolio-item {
+   position: absolute;
+   background-color: white;
+   width: 753px;
+   top: -200px;
+   right: 5%;
+   padding: 50px 0;
+   border-radius: 10px;
+}
+.biodata {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.biodata-header {
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
+}
+.biodata-header .foto-profile {
+   width: 150px;
+   height: 150px;
+   margin: auto;
+}
+.edit {
+   display: flex;
+   margin: auto;
+   align-items: center;
+   gap: 10px;
+   color: #9ea0a5;
+}
+.edit .edit-icon {
+   width: 20px;
+   height: 20px;
+   margin: auto;
+}
+.biodata-header > p {
+   color: var(--font);
+}
+.location {
+   display: flex;
+   gap: 5px;
+}
+.biodata-detail {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+.biodata-detail :not(h3):not(h4) {
+   color: var(--font);
+}
+.biodata-detail > h4 {
+   font-weight: 500;
+}
+.btn-biodata-header {
+   background-color: var(--color-primary);
+   color: white;
+   padding: 20px;
+   border-radius: 5px;
+   border: none;
+}
+.form-edit {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   position: absolute;
+   gap: 20px;
+   width: 753px;
+   top: -200px;
+   right: 5%;
+}
+.data-diri {
+   background-color: white;
+   border-radius: 5px;
+   padding: 10px 0;
+}
+.data-diri .title {
+   padding: 20px 10px;
+   font-size: 22px;
+   font-weight: 600;
+}
+.form-data-diri {
+   border-top: 1.5px solid #9ea0a5;
+}
+.data-diri .form-item {
+   display: flex;
+   flex-direction: column;
+   padding: 10px 20px;
+}
+.data-diri .form-item label {
+   color: #9ea0a5;
+   padding: 5px 10px;
+}
+.data-diri .form-item input {
+   height: 50px;
+   border: 1px solid #9ea0a5;
+   padding: 0 10px;
+   border-radius: 5px;
+   outline: none;
+}
+.data-diri .form-item input[name="description"] {
+   height: 144px;
+}
+.skill {
+   background-color: white;
+   border-radius: 5px;
+   padding: 10px 0;
+}
+.skill .title {
+   padding: 20px 10px;
+   font-size: 22px;
+   font-weight: 600;
+}
+.skill form .form-item {
+   border-top: 1px solid var(--font);
+   padding: 20px 30px;
+}
+.skill .form-item input {
+   height: 50px;
+   width: 80%;
+   padding: 0 10px;
+   border-radius: 5px;
+   outline: none;
+   border: 1px solid var(--font);
+}
+.skill .form-item button {
+   background-color: #fbb017;
+   color: white;
+   padding: 15px;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   margin-left: 20px;
+}
+.experience {
+   background-color: white;
+   border-radius: 10px;
+}
+.experience .title {
+   padding: 20px 10px;
+   font-weight: 600;
+   font-size: 22px;
+}
+.experience .form-experience {
+   border-top: 1px solid var(--font);
+   padding: 20px 0;
+}
+.form-experience .form-item {
+   display: flex;
+   flex-direction: column;
+   padding: 10px 20px;
+}
+.form-experience .form-item input {
+   border: 1px solid var(--font);
+   outline: none;
+   height: 50px;
+   padding: 0 10px;
+   border-radius: 5px;
+}
+.form-experience .form-item:nth-child(2) {
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   gap: 20px;
+}
+.form-experience .form-item:nth-child(2) div {
+   display: flex;
+   flex-direction: column;
+}
+.form-experience .form-item input[name="description"] {
+   height: 144px;
+}
+.form-experience label {
+   color: #9ea0a5;
+}
+.edit-portofolio {
+   background-color: white;
+   padding: 20px 0;
+   border-radius: 10px;
+   height: 920px;
+}
+.edit-portofolio .title {
+   font-size: 22px;
+   font-weight: 600;
+   padding: 10px 20px;
+}
+.edit-portofolio form {
+   border-top: 1px solid var(--font);
+   padding: 20px 30px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.edit-portofolio .form-item {
+   display: flex;
+   flex-direction: column;
+}
+.edit-portofolio .form-item input {
+   height: 50px;
+   border: 1px solid var(--font);
+   outline: none;
+   padding: 0 10px;
+   border-radius: 5px;
+}
+.edit-portofolio .form-btn {
+   display: flex;
+   gap: 10px;
+}
+.edit-portofolio .form-btn .btn-type {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   border: 1px solid var(--font);
+   padding: 10px 15px;
+   border-radius: 5px;
+}
+.edit-portofolio .form-btn .btn-type:nth-child(2) {
+   border: none !important;
+}
+.type-portofolio {
+   margin-bottom: 5px;
+}
+.edit-portofolio .upload-img {
+   height: 500px;
+}
+.upload-img .title {
+   color: var(--font);
+   font-size: 14px;
+   margin: 0 20px;
+   font-weight: 500;
+}
+.upload-img .form-img {
+   height: 70%;
+   width: 90%;
+   margin: auto;
+   border: 2px dashed var(--font);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 50px;
+   align-items: center;
+}
+.upload-img .form-img .title {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: black;
+}
+.upload-img .form-img .title > img {
+   width: 100px;
+   height: 100px;
+}
+.upload-img .requirement {
+   display: flex;
+   gap: 20px;
+   width: 50%;
+}
+.upload-img .requirement .requirement-item {
+   display: flex;
+   align-items: center;
+}
+.upload-img .requirement .requirement-item img {
+   max-width: 50px;
+   max-height: 50px;
+}
+.btn-portofolio {
+   height: 60px;
+   border: 1px solid var(--outline);
+   margin: 50px 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--btn-skilss);
+   font-size: 22px;
+   font-weight: 700;
+   transition: 300ms;
+   cursor: pointer;
+}
+.btn-portofolio:hover {
+   background-color: var(--btn-skilss);
+   color: white;
+   border: none;
+   transition: 300ms;
+}
+footer {
+   margin-top: 150px;
+   background-color: var(--color-primary);
+   height: 300px;
+   padding: 5% 10%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+footer .foot-logo {
+   max-width: 300px;
+}
+footer .foot-logo img {
+   width: 200px;
+   height: 50px;
+}
+footer .foot-logo p {
+   color: white;
+   margin-top: 30px;
+   font-size: 16px;
+   font-weight: 100;
+}
+
+footer .foot-end {
+   color: white;
+   padding: 20px 0;
+   display: flex;
+   justify-content: space-between;
+   border-top: 1px solid white;
+   font-weight: 200;
+}
+footer .foot-end .foot-contact {
+   display: flex;
+   gap: 50px;
+}
+
+footer .foot-end .foot-contact > p {
+   cursor: pointer;
+}

@@ -1,0 +1,195 @@
+:root {
+   --color-primary: #5e50a1;
+   --font: #9ea0a5;
+   --btn-skilss: #fbb01799;
+   --outline: #fbb017;
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: "Open Sans", sans-serif;
+   background-color: #e4e7e9;
+}
+button {
+   cursor: pointer;
+}
+nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 2% 10%;
+   align-items: center;
+   background-color: white;
+}
+.nav-right {
+   display: flex;
+   gap: 30px;
+}
+.container {
+   background-color: var(--color-primary);
+   height: 300px;
+}
+#portofolio {
+   position: relative;
+   height: 100vh;
+}
+
+.biodata {
+   position: absolute;
+   background-color: white;
+   width: 300px;
+   top: -200px;
+   left: 100px;
+   border-radius: 10px;
+   padding: 20px 30px;
+}
+.portofolio-item {
+   position: absolute;
+   background-color: white;
+   width: 753px;
+   top: -200px;
+   right: 5%;
+   padding: 50px 0;
+   border-radius: 10px;
+}
+.biodata {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.biodata-header {
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
+}
+.biodata-header > img {
+   width: 150px;
+   height: 150px;
+   margin: auto;
+}
+.biodata-header > p {
+   color: var(--font);
+}
+.location {
+   display: flex;
+   gap: 5px;
+}
+.biodata-detail {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+.biodata-detail :not(h3):not(h4) {
+   color: var(--font);
+}
+.biodata-detail > h4 {
+   font-weight: 500;
+}
+.btn-biodata-header {
+   background-color: var(--color-primary);
+   color: white;
+   padding: 20px;
+   border-radius: 5px;
+   border: none;
+}
+.biodata-body {
+   margin: 40px 0;
+}
+.biodata-body > h3 {
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 23px;
+}
+.btn-skills {
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+   gap: 10px;
+   margin-top: 20px;
+}
+
+.btn-skills > button {
+   background-color: var(--btn-skilss);
+   color: white;
+   border: none;
+   padding: 10px;
+   border: 1px solid var(--outline);
+   border-radius: 5px;
+}
+.biodata-footer > ul {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   list-style-type: none;
+   color: var(--font);
+}
+.biodata-footer > ul li {
+   display: flex;
+   gap: 20px;
+}
+.portofolio-item {
+   padding: 10px;
+}
+.title {
+   display: flex;
+   gap: 20px;
+}
+.title > button {
+   background-color: transparent;
+   border: none;
+   color: var(--font);
+   font-size: 20px;
+   padding: 10px 0;
+}
+.title :nth-child(1) {
+   color: black !important;
+   font-weight: bold;
+   border-bottom: 2px solid var(--color-primary);
+}
+.list {
+   display: grid;
+   margin-top: 20px;
+   grid-template-columns: repeat(3, auto);
+   text-align: center;
+   row-gap: 10px;
+}
+
+footer {
+   margin-top: 150px;
+   background-color: var(--color-primary);
+   height: 300px;
+   padding: 5% 10%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+footer .foot-logo {
+   max-width: 300px;
+}
+footer .foot-logo img {
+   width: 200px;
+   height: 50px;
+}
+footer .foot-logo p {
+   color: white;
+   margin-top: 30px;
+   font-size: 16px;
+   font-weight: 100;
+}
+
+footer .foot-end {
+   color: white;
+   padding: 20px 0;
+   display: flex;
+   justify-content: space-between;
+   border-top: 1px solid white;
+   font-weight: 200;
+}
+footer .foot-end .foot-contact {
+   display: flex;
+   gap: 50px;
+}
+
+footer .foot-end .foot-contact > p {
+   cursor: pointer;
+}
