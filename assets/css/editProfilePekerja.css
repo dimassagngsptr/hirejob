@@ -168,8 +168,11 @@ nav {
    border-radius: 5px;
    outline: none;
 }
-.data-diri .form-item input[name="description"] {
+.data-diri .form-item textarea[name="description"] {
    height: 144px;
+   outline: none;
+   padding: 10px;
+   border-radius: 5px;
 }
 .skill {
    background-color: white;
@@ -236,8 +239,11 @@ nav {
    display: flex;
    flex-direction: column;
 }
-.form-experience .form-item input[name="description"] {
+.form-experience .form-item textarea[name="description"] {
    height: 144px;
+   border-radius: 5px;
+   outline: none;
+   padding: 10px;
 }
 .form-experience label {
    color: #9ea0a5;
