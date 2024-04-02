@@ -1,3 +1,5 @@
+Hirejob Application
+Slicing with HTML, CSS , and Tailwind CSS
 https://hirejob-gold.vercel.app/ => Landing Page
 https://hirejob-gold.vercel.app/login.html => Login Page
 https://hirejob-gold.vercel.app/home_v1.html => Home
