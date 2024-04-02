@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Edit Profile Perusahaan</title>
+      <!-- FONTS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+         rel="stylesheet" />
+      <!-- FONTS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style type="text/tailwindcss">
+         @layer utilities {
+            .content-auto {
+               content-visibility: auto;
+            }
+         }
+      </style>
+      <script>
+         tailwind.config = {
+            theme: {
+               extend: {
+                  colors: {
+                     primary: "#5e50a1",
+                     font: "#9ea0a5",
+                     btn: "#fbb01799",
+                  },
+                  fontFamily: {
+                     primary: ["Open Sans", "SansSerif"],
+                  },
+               },
+            },
+         };
+      </script>
+   </head>
+   <body class="m-0 p-0">
+      <header>
+         <nav class="flex justify-between px-6 py-2 lg:px-[10%] lg:py-[2%]">
+            <div>
+               <img src="../assets/images/landing-page/main-logo.png" alt="" />
+            </div>
+            <div class="flex gap-[10px] lg:gap-[30px] items-center">
+               <img
+                  src="../assets/images/home-v1/bell (1) 1.svg"
+                  alt=""
+                  class="max-w-[20px] max-h-[20px] lg:max-w-[100px] lg:max-h-[100px]" />
+               <img
+                  src="../assets/images/portofolio/mail (4).svg"
+                  alt=""
+                  class="max-w-[20px] max-h-[20px] lg:max-w-[100px] lg:max-h-[100px]" />
+               <img
+                  src="../assets/images/home-v1/Mask Group.png"
+                  alt=""
+                  class="max-w-[20px] max-h-[20px] lg:max-w-[100px] lg:max-h-[100px]" />
+            </div>
+         </nav>
+      </header>
+      <div class="hidden lg:block lg:bg-primary lg:h-[300px]"></div>
+      <section
+         class="flex flex-col border-t border-font lg:border-none lg:flex relative bg-gray-200 h-[1000px] gap-[20px] font-primary">
+         <div
+            class="w-full lg:absolute bg-white lg:h-[300px] lg:w-[25%] ] -top-[20%] left-[10%] py-[20px] px-[20px] lg:rounded-[10px]">
+            <div class="flex flex-col justify-center items-center gap-[20px]">
+               <img
+                  class="max-w-[150px] max-h-[150px]"
+                  src="../assets/images/landing-page/testimonial_3.png"
+                  alt="" />
+               <div class="flex gap-[10px] -ml-[20px]">
+                  <img
+                     class="max-w-[20px] max-h-[20px]"
+                     src="../assets/images/edit-pekerja/edit.svg"
+                     alt="" />
+                  <p class="text-font">Edit</p>
+               </div>
+            </div>
+            <div class="flex flex-col text-center lg:text-start">
+               <h2 class="font-bold lg:text-[20px]">PT. Martabat Jaya Abadi</h2>
+               <small class="text-font">Financial</small>
+               <div class="flex justify-center lg:justify-start">
+                  <img
+                     class="text-font"
+                     src="../assets/images/home-v1/map-pin (4) 1.svg"
+                     alt="" />
+                  <p class="text-font">Purwokerto, Jawa Tengah</p>
+               </div>
+            </div>
+         </div>
+         <div
+            class="hidden lg:absolute lg:top-[12%] lg:flex lg:flex-col gap-[10px] lg:left-[10%] lg:w-[25%]">
+            <button
+               class="bg-primary py-[10px] rounded-[5px] text-white font-bold">
+               Simpan
+            </button>
+            <button
+               class="border border-primary text-primary font-bold py-[10px] rounded-[5px]">
+               Edit
+            </button>
+         </div>
+         <div
+            class="w-full mt-[20px] lg:mt-0 lg:absolute bg-white lg:w-[50%] lg:-top-[20%] rounded-md right-[5%] py-[30px]">
+            <h2 class="px-[20px] font-bold text-[20px]">Data Diri</h2>
+            <div
+               class="flex flex-col border-t border-font mt-[20px] px-[20px] py-[10px] gap-[20px]">
+               <div class="flex flex-col">
+                  <label for="name" class="text-font">Nama Perusahaan</label>
+                  <input
+                     type="text"
+                     name="name"
+                     placeholder="Masukan nama perusahaan"
+                     class="h-[50px] border border-font bg-white rounded-md outline-none px-2" />
+               </div>
+               <div class="flex flex-col">
+                  <label for="name" class="text-font">Bidang</label>
+                  <input
+                     type="text"
+                     name="name"
+                     placeholder="Masukan bidang perusahaan ex : Financial"
+                     class="h-[50px] border border-font bg-white rounded-md outline-none px-2" />
+               </div>
+               <div class="flex flex-col">
+                  <label for="name" class="text-font">Kota</label>
+                  <input
+                     type="text"
+                     name="name"
+                     placeholder="Masukan kota"
+                     class="h-[50px] border border-font bg-white rounded-md outline-none px-2" />
+               </div>
+               <div class="flex flex-col">
+                  <label for="name" class="text-font">Deskripsi singkat</label>
+                  <input
+                     type="text"
+                     name="name"
+                     placeholder="Masukan Deskripsi singkat"
+                     class="h-[150px] border border-font bg-white rounded-md outline-none px-2" />
+               </div>
+               <div class="flex flex-col">
+                  <label for="name" class="text-font">Email</label>
+                  <input
+                     type="email"
+                     name="name"
+                     placeholder="Masukan Email"
+                     class="h-[50px] border border-font bg-white rounded-md outline-none px-2" />
+               </div>
+               <div class="flex flex-col">
+                  <label for="name" class="text-font">Instagram</label>
+                  <input
+                     type="Instagram"
+                     name="name"
+                     placeholder="Masukan Instagram"
+                     class="h-[50px] border border-font bg-white rounded-md outline-none px-2" />
+               </div>
+               <div class="flex flex-col">
+                  <label for="name" class="text-font">Nomor Telepon</label>
+                  <input
+                     type="telepon"
+                     name="name"
+                     placeholder="Masukan Nomor Telepon"
+                     class="h-[50px] border border-font bg-white rounded-md outline-none px-2" />
+               </div>
+               <div class="flex flex-col">
+                  <label for="name" class="text-font">Linkedin</label>
+                  <input
+                     type="telepon"
+                     name="name"
+                     placeholder="Masukan Linkedin"
+                     class="h-[50px] border border-font bg-white rounded-md outline-none px-2" />
+               </div>
+               <div class="flex gap-[20px] justify-end lg:hidden">
+                  <button
+                     class="bg-primary py-[10px] rounded-[5px] text-white font-bold w-[70px] cursor-pointer">
+                     Simpan
+                  </button>
+                  <button
+                     class="border border-primary text-primary font-bold py-[10px] rounded-[5px] w-[70px] cursor-pointer">
+                     Edit
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+   </body>
+</html>
