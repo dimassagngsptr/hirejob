@@ -103,7 +103,7 @@ nav {
 }
 .btn-skills {
    display: grid;
-   grid-template-columns: repeat(3, auto);
+   grid-template-columns: repeat(3, 90px);
    gap: 10px;
    margin-top: 20px;
 }
